@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/BinPu/Desktop/website/sign%20in.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./sign in_files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/nav_style.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+
+</head>
+<body>
+	<header>
+		<nav>
+			<img class="logo" src="images/logo.png">
+			<div class="menu">
+				<ul>
+					<li><a href="trangchu.html">Trang chủ</a></li>
+					<li><a href="gioi_thieu.html">Giới thiệu</a></li>
+					<li><a href="dang_nhap.html">Đăng nhập</a></li>
+					<li><a href="dang_ky.html">Đăng ký</a></li>
+					<li><a href="#contact">Liên hệ</a></li>
+				</ul>
+			</div>	
+		</nav>
+		<div class="container">	
+			<section>		
+			<p>Hãy cùng chúng tôi đến với Noisli</p>
+			<h2> Đăng kí tài khoản Noisli</h2>
+			<form action="file:///C:/Users/BinPu/Desktop/website/sign%20in.html#" method="post" name="maudangki" target="_blank">
+				<div class="form-group">
+					Họ tên (*):<br>
+					<input type="text" class="form-control" id="name" placeholder="Nhập vào họ và tên" required=""><br>
+					<span id="nameError"></span>
+				</div>
+				<div class="form-group">
+					Tên đăng nhập (*):<br>
+					<input type="text" class="form-control" id="account" placeholder="Tên đăng nhập từ 8 kí tự trở lên" required=""><br>
+					 <span id="accountError"></span>
+				</div>
+				<div class="form-group">
+					Mật khẩu (*):<br>
+					<input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><br>
+				</div>
+				<div class="form-group">
+					Nhập lại mật khẩu (*):<br>
+					<input type="password" class="form-control" id="checkpassword" placeholder="Nhập lại mật khẩu" required=""><br>
+				</div>
+				<div class="form-group">
+					Quốc tịch (*):<br>            
+						<select id="national">
+							<option value="VN">Việt Nam</option>
+							<option value="US">Mỹ</option>
+							<option value="UK">Anh</option>
+							<option value="JP">Nhật</option>
+							<option value="Ko">Hàn quốc</option>
+						</select><br>
+						<input list="question" class="form-control">
+				</div>
+				<div class="form-group">
+					Email (*):<br>
+					<input type="email" class="form-control" id="email" placeholder="abc@gmail.com" required=""><br>
+					</div>
+				<div class="form-group">
+					Số điện thoại (*):<br>
+					<input type="text" class="form-control" id="phone" placeholder="Nhập vào số điện thoại" required=""><br>
+				</div>
+				<div class="form-group">
+					Câu hỏi bí mật (*):<br>            
+						<select id="question">
+							<option value="Câu 1:">Tên trường tiểu học của bạn là gì? </option>   
+							<option value="Câu 2:"> Tên gọi của bạn ở nhà là gì? </option>
+							<option value="Câu 3:"> Giáo viên chủ nhiệm cấp ba của bạn tên gì? </option>
+						</select><br>
+						<input list="question" class="form-control">
+				</div>
+				<div class="form-group">
+					Trả lời (*):<br>
+					<input type="text" class="form-control" id="answer" placeholder="Nhập câu trả lời" required=""><br><br>
+				</div>        
+				<input type="submit" class="btn btn-primary" id="signup" value="Đăng kí"><br>
+			</form>    	
+			</section>
+		</div>		
+	</header>
+
+</body></html>

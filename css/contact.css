@@ -1,0 +1,12 @@
+.contact {
+	background-color: #002173;
+	margin: auto;
+	color: white;
+	height: 500px;
+	padding: 200px 0;
+	text-align: center;
+}
+
+.contact img {
+	margin: 0 10px;
+}

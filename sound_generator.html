@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo âm thanh</title>
+	<link rel="stylesheet" type="text/css" href="css/nav_style.css">
+	<link rel="stylesheet" type="text/css" href="css/sound_generator.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<img class="logo" src="images/logo.png">
+			<div class="menu">
+				<ul>
+					<li><a href="trangchu.html">Trang chủ</a></li>
+					<li><a href="gioi_thieu.html">Giới thiệu</a></li>
+					<li><a href="dang_nhap.html">Đăng nhập</a></li>
+					<li><a href="dang_ky.html">Đăng ký</a></li>
+					<li><a href="#contact">Liên hệ</a></li>
+				</ul>
+			</div>	
+		</nav>
+		<div class="slider_container">
+			<table>
+				<tr>
+					<th>Sub-Bass</th>
+					<th><input type="range" id="slider0" class="slider" name="points" min="0" max="100" value="0"><span id="result0">0</span></th>
+				</tr>
+
+				<tr>
+					<th>Low Bass</th>
+					<th><input type="range" id="slider1" class="slider" name="points" min="0" max="100" value="0"><span id="result1">0</span></th>
+				</tr>
+
+				<tr>
+					<th>Bass</th>
+					<th><input type="range" id="slider2" class="slider" name="points" min="0" max="100" value="0"><span id="result2">0</span></th>
+				</tr>
+
+				<tr>
+					<th>High Bass</th>
+					<th><input type="range" id="slider3" class="slider" name="points" min="0" max="100" value="0"><span id="result3">0</span></th>
+				</tr>
+
+				<tr>
+					<th>Low Mids</th>
+					<th><input type="range" id="slider4" class="slider" name="points" min="0" max="100" value="0"><span id="result4">0</span></th>
+				</tr>
+
+				<tr>
+					<th>Mids</th>
+					<th><input type="range" id="slider5" class="slider" name="points" min="0" max="100" value="0"><span id="result5">0</span></th>
+				</tr>
+
+				<tr>
+					<th>High Mids</th>
+					<th><input type="range" id="slider6" class="slider" name="points" min="0" max="100" value="0"><span id="result6">0</span></th>
+				</tr>
+
+				<tr>
+					<th>Low Treble</th>
+					<th><input type="range" id="slider7" class="slider" name="points" min="0" max="100" value="0"><span id="result7">0</span></th>
+				</tr>
+
+				<tr>
+					<th>Treble</th>
+					<th><input type="range" id="slider8" class="slider" name="points" min="0" max="100" value="0"><span id="result8">0</span></th>
+				</tr>
+
+				<tr>
+					<th>High Treble</th>
+					<th><input type="range" id="slider9" class="slider" name="points" min="0" max="100" value="0"><span id="result9">0</span></th>
+				</tr>
+			</table>
+			<table id="media">
+				<tr>
+					<th>
+						<button class="media_btn"><i class="fa fa-play"></i></button>
+						<button class="media_btn"><i class="fa fa-pause"></i></button>
+						<button class="media_btn"><i class="fa fa-stop"></i></button>
+						<button class="media_btn"><i class="fa fa-save"></i></button>
+						<button class="media_btn"><i class="fa fa-download"></i></button>
+					</th>
+				</tr>
+			</table>
+		</div>
+	</header>
+
+	<script type="text/javascript">
+
+
+			for(let i=0; i<10; i++) {
+				console.log(i);
+				document.addEventListener("DOMContentLoaded", function(){
+					document.querySelector(`#slider${i}`).onchange = function(){
+						document.querySelector(`#result${i}`).innerHTML = document.querySelector(`#slider${i}`).value
+					}
+				})	
+			}
+
+	</script>
+</body>
+</html>
